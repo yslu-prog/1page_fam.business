@@ -9,8 +9,7 @@
 | 佔位文字 | 換成 |
 |---|---|
 | `[電話]` | 電話號碼。`tel:` 連結裡請寫成不含空格與橫線的格式，例如 `tel:0227001234` |
-| `[LINE-ID]`、`[LINE ID]` | LINE 官方帳號 ID（含 @） |
-| `[FORM-ID]` | 表單服務的 ID（見下方） |
+| `[LINE-ID]` | LINE 官方帳號 ID（含 @，例如 `@rongtai`）。按鈕會直接開啟加好友頁面 |
 
 JSON-LD 結構化資料區塊（檔案開頭的 `application/ld+json`）裡的 `telephone` 也要一起改。
 
@@ -28,10 +27,6 @@ JSON-LD 結構化資料區塊（檔案開頭的 `application/ld+json`）裡的 `
 1. Settings → Pages → Custom domain 填入網域
 2. 在網域商設定 DNS（GitHub 會顯示要填的值）
 3. 把 `index.html`、`robots.txt`、`sitemap.xml` 裡的 `yslu-prog.github.io/1page_fam.business` 換成新網域
-
-## 表單
-
-GitHub Pages 只能放靜態網頁，表單需要外部服務才能寄信。最簡單的是 Formspree（免費方案每月 50 封）：註冊 → 建立表單 → 把拿到的 ID 填進 `[FORM-ID]`。不想用表單的話，可以把整個 `<form>…</form>` 刪掉，只留電話和 LINE。
 
 ## 上線後
 
