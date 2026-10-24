@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yslu-prog.github.io/1page_fam.business/sitemap.xml
